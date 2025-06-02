@@ -103,7 +103,7 @@
   grid-row: 2/3;
 } 
 .yellow3 {
-  width: 100%; 
+  width: 90%; 
   height: 100px; 
   background-color: gold; 
   grid-column: 3/4;
@@ -155,23 +155,20 @@
 /* Activity 5 styles */ 
 .content5 {
   /* This is the parent of the activity 5 boxes. */
-  display: flex;
-  flex-direction: column;
   height: 400px;
 }
 .red5 { 
   width: 100%; 
   height: 100px; 
   background-color: red; 
-  justify-content: center;
   align-items: center;
 } 
 .green5 { 
   width: 200px; 
-  height: 100px; 
+  height: 200px; 
   background-color: green;  
-  
   z-index: 2; 
+  float:left;
 
 } 
 .yellow5 {
@@ -185,7 +182,6 @@
   width: 100%; 
   height: 100px; 
   background-color: blue; 
-  justify-content: center;
   align-items: center;
 } 
 /* Activity 6 styles */ 
