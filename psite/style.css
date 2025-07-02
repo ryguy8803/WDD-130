@@ -1,0 +1,260 @@
+body {
+    font-family: var(--paragraph-font);
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+#content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #233329;
+    display: grid;
+    grid-template-columns: 150px auto;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 120px;
+    padding-left: 20px;
+}
+
+#logo_link {
+    justify-self: start;
+}
+
+nav {
+    background-color: #233329;
+    text-align: right;
+    padding-right: 20px;
+    line-height: normal;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: var(--accent1-color);
+    color: var(--nav-hover-link-color);
+    border-color: var(--accent1-color);
+}
+
+
+nav a[href="index.html"]:hover {
+    background-color: var(--accent1-color);
+    color: var(--nav-hover-link-color);
+    border-color: var(--accent1-color);
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 20px;
+}
+
+.header-landscape {
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.header-landscape img.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+}
+
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+#hero-box {
+    text-align: center;
+}
+
+#hero-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#hero-msg {
+    text-align: left;
+}
+
+#hero-msg h1.home-title {
+    font-size: 2.5em;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+#hero-msg h4 {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: var(--paragraph-color-on-white);
+    margin: 0;
+}
+
+footer {
+    background-color: #233329;
+    color: white;
+    padding: 25px 0;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.9em;
+    box-sizing: border-box;
+}
+
+footer p {
+    color: white;
+    margin: 5px 10px;
+    padding: 0;
+}
+
+footer p a {
+    color: white;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social img {
+    width: 40px;
+    height: auto;
+    margin: 0 15px;
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+}
+
+p {
+    color: var(--paragraph-color-on-white);
+}
+
+header > h1, header > h2 {
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    #logo_link {
+        justify-self: center;
+        padding-left: 0;
+    }
+
+    nav {
+        text-align: center;
+        padding-right: 0;
+        margin-top: 10px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px auto;
+        max-width: 250px;
+    }
+
+    #hero {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    #hero-img {
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+
+    #hero-msg {
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer p {
+        margin: 10px 0;
+    }
+
+    .social {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        width: 100px;
+    }
+
+    nav a {
+        font-size: 1em;
+        padding: 8px 15px;
+    }
+
+    .header-landscape {
+        height: 200px;
+    }
+
+    #hero {
+        padding: 15px;
+        gap: 20px;
+    }
+
+    #hero-msg h1.home-title {
+        font-size: 2em;
+    }
+
+    #hero-msg h4 {
+        font-size: 1em;
+    }
+
+    .social img {
+        width: 35px;
+        margin: 0 10px;
+    }
+}
