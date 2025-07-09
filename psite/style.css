@@ -97,12 +97,35 @@ nav a[href="index.html"]:hover {
     text-align: center;
 }
 
+#hero-image-container {
+    position: relative; 
+    display: inline-block; 
+}
+
 #hero-img {
     width: 100%;
     max-width: 400px;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block; 
+}
+
+.container {
+    position: relative;
+    font-family: Arial;
+}
+.text-block {
+    position: absolute;
+    bottom: 0; 
+    left: 0;   
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 20px; 
+    text-align: center;
+    width: 71.5%; 
+    box-sizing: border-box;
+    
 }
 
 #hero-msg {
@@ -257,4 +280,5 @@ header > h1, header > h2 {
         width: 35px;
         margin: 0 10px;
     }
+
 }
