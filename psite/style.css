@@ -280,5 +280,74 @@ header > h1, header > h2 {
         width: 35px;
         margin: 0 10px;
     }
-
 }
+
+/* Styling for Community Service and Clubs page (page1.html) */
+
+.page1-grid {
+    display: grid;
+    grid-template-areas:
+        "mission-card msg1"
+        "msg2 band-card";
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    padding: 20px 0;
+    align-items: start;
+}
+
+.mission-card {
+    grid-area: mission-card;
+    background-color: #bbb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    border: 1px solid #999;
+    overflow: hidden;
+}
+
+.mission-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.msg1 {
+    grid-area: msg1;
+    line-height: 1.6;
+    text-align: justify;
+    padding-right: 10px;
+}
+
+.band-card {
+    grid-area: band-card;
+    background-color: #bbb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+    border: 1px solid #999;
+    overflow: hidden;
+}
+
+.band-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.msg2 {
+    grid-area: msg2;
+    line-height: 1.6;
+    text-align: justify;
+    padding-left: 10px;
+}
+
+.msg2 p {
+    white-space: pre-wrap;
+    margin: 0;
+}
+
+
