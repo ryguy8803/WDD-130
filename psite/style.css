@@ -350,4 +350,59 @@ header > h1, header > h2 {
     margin: 0;
 }
 
+/* Styling for Work Experience page (page2.html) */ 
+
+.page2-grid {
+    display: grid;
+    grid-template-areas:
+        "mission-card msg1"
+        "msg2 band-card";
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    padding: 20px 0;
+    align-items: start;
+}
+
+.JJ-card {
+    grid-area: mission-card;
+    background-color: #bbb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    border: 1px solid #999;
+    overflow: hidden;
+}
+
+.JJ-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.dad-card {
+    grid-area: band-card;
+    background-color: #bbb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+    border: 1px solid #999;
+    overflow: hidden;
+}
+
+.dad-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+
+
+
 
